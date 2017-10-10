@@ -12,6 +12,6 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Log.i(LAG, "what to do");
+        Log.i(LAG, "testing git hooks");
     }
 }
