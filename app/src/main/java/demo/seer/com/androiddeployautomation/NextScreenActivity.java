@@ -3,6 +3,7 @@ package demo.seer.com.androiddeployautomation;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Button;
 
 /**
  * Created by cha on 10/11/17.
@@ -14,6 +15,8 @@ public class NextScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_next_screen);
+
+        Button btn = (Button) findViewById(R.id.button);
     }
 
     @Override
