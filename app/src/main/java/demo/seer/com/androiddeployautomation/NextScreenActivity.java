@@ -1,8 +1,11 @@
 package demo.seer.com.androiddeployautomation;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.Button;
 
 /**
@@ -17,6 +20,26 @@ public class NextScreenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_next_screen);
 
         Button btn = (Button) findViewById(R.id.button);
+
+        final AlertDialog.Builder builder = new AlertDialog.Builder(NextScreenActivity.this);
+        builder.setTitle("Do you want to go back");
+        builder.setPositiveButton("Go Back", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                NextScreenActivity.this.onBackPressed();
+            }
+        });
+        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                // User cancelled the dialog
+            }
+        });
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                builder.show();
+            }
+        });
     }
 
     @Override
