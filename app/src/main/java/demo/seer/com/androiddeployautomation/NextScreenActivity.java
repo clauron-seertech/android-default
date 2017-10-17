@@ -16,9 +16,10 @@ public class NextScreenActivity extends AppCompatActivity {
 
         this.setContentView(R.layout.activity_next_screen);
 
-
         Toast toast = Toast.makeText(this, "This is the second screen", Toast.LENGTH_SHORT);
         toast.show();
+
+
     }
 
     @Override
