@@ -17,11 +17,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".NextScreenActivity">
-            <intent-filter>
-
-            </intent-filter>
-        </activity>
+        <activity android:name=".NextScreenActivity" />
     </application>
 
 </manifest>

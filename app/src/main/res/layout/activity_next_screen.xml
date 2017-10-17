@@ -19,8 +19,11 @@
         android:padding="20dp"
         android:textAlignment="center" />
 
-    <RatingBar
-        android:id="@+id/ratingBar"
+    <Button
+        android:id="@+id/button"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="Go Back" />
+
+
 </LinearLayout>
