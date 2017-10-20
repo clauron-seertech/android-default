@@ -7,6 +7,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RatingBar;
 
 /**
  * Created by cha on 10/11/17.
@@ -40,6 +41,8 @@ public class NextScreenActivity extends AppCompatActivity {
                 builder.show();
             }
         });
+
+        RatingBar ratingBar = (RatingBar) findViewById(R.id.ratingBar);
     }
 
     @Override
